@@ -5,7 +5,12 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+  },
+  { path: 'historial-tratamientos',
+    loadChildren: () => import('./historial-tratamientos/historial-tratamientos.module')
+      .then(m => m.HistorialTratamientosPageModule)
+  },
+  { path: 'detalle-tratamiento', loadChildren: './detalle-tratamiento/detalle-tratamiento.module#DetalleTratamientoPageModule' }
 ];
 @NgModule({
   imports: [

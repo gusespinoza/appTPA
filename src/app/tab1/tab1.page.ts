@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +10,17 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+
+  lat = -33.027819;
+  lng = -71.491981;
+
+  constructor(public router: Router) {
+
+  }
+
+
+  historialTratamientos() {
+    this.router.navigate(['/historial-tratamientos']);
+  }
 
 }

@@ -2,3 +2,18 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+agm-map {
+  height: 98%;
+}
+
+.buscar {
+  position: absolute;
+  margin-top: 5%;
+  z-index: 9999;
+}
+
+.iconoMapa {
+  width: 50px;
+  transition: width 2s;
+}
